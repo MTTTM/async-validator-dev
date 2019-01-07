@@ -2,7 +2,7 @@
 <template name="f67e2a90">
   <view class="_view data-v-6e9ac7b0 booleen-x-input {{[errorTxt && errorField == prop ? 'booleen-x-error-input-no-border ' : '']}}">
     <template name="default"></template>
-    <checkbox-group bindchange="handleProxy" disabled="{{disabled}}" data-eventid="{{'aku-0'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-6e9ac7b0">
+    <checkbox-group bindchange="handleProxy" disabled="{{disabled}}" data-eventid="{{'pkX-0'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-6e9ac7b0">
       <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
     </checkbox-group>
     <view class="_view data-v-6e9ac7b0 x-error" wx:if="{{errorTxt&&errorField==prop}}">{{errorTxt}}</view>

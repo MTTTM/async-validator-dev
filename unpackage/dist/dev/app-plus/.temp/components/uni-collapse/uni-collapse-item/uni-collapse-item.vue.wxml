@@ -3,7 +3,7 @@
 <template name="4b7ad7de">
   <view hover-class="{{disabled === true || disabled === 'true' ? '' : 'uni-collapse-cell--hover'}}" class="_view data-v-7ac55259 {{setCollapseCellClass}}">
     <template name="default"></template>
-    <view class="_view data-v-7ac55259 uni-collapse-cell__title" bindtap="handleProxy" data-eventid="{{'OJA-0'}}" data-comkey="{{$k}}">
+    <view class="_view data-v-7ac55259 uni-collapse-cell__title" bindtap="handleProxy" data-eventid="{{'P9W-0'}}" data-comkey="{{$k}}">
       <view class="_view data-v-7ac55259 uni-collapse-cell__title-extra" wx:if="{{thumb}}">
         <image class="_image data-v-7ac55259 uni-collapse-cell__title-img" src="{{thumb}}"></image>
       </view>
@@ -11,7 +11,7 @@
         <view class="_view data-v-7ac55259 uni-collapse-cell__title-text">{{title}}</view>
       </view>
       <view class="_view data-v-7ac55259 uni-collapse-cell__title-arrow {{setActive}}">
-        <template color="#bbb" size="20" type="arrowdown" data="{{...$root['0'], ...$root[$kk+'9ob-0'],$root}}" is="678c20c6"></template>
+        <template color="#bbb" size="20" type="arrowdown" data="{{...$root['0'], ...$root[$kk+'E4S-0'],$root}}" is="678c20c6"></template>
       </view>
     </view>
     <view class="_view data-v-7ac55259 uni-collapse-cell__content {{animation === 'outer' ? 'uni-collapse-cell--animation' : ''}}" style=" {{(  'height:' +  (isOpen === 'true' || isOpen === true ? height + 'px' : '0px') +  ';')}}">

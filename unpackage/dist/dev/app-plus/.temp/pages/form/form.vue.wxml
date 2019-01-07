@@ -4,7 +4,7 @@
 <template name="6d4e2571">
   <view class="_view data-v-d883f628">
     <view class="_view data-v-d883f628 uni-padding-wrap uni-common-mt">
-      <template ref="ruleForm" bindsubmit="handleProxy" data-eventid="{{'5dd-8'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Jus-7'],$root, $slotdefault:'data-v-d883f628-default-Jus-7'}}" is="0c1e8b38"></template>
+      <template ref="ruleForm" bindsubmit="handleProxy" data-eventid="{{'axv-8'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'QyT-7'],$root, $slotdefault:'data-v-d883f628-default-QyT-7'}}" is="0c1e8b38"></template>
     </view>
   </view>
 </template>

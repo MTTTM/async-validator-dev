@@ -47,7 +47,7 @@
 						id: 'form',
 						name: '表单组件',
 						open: false,
-						pages: ['form']
+						pages: ['form/form',"form/decreateInput"]
 					}, {
 						id: 'nav',
 						name: '导航',
@@ -130,7 +130,7 @@
 			goDetailPage(e) {
 				if (typeof e === 'string') {
 					uni.navigateTo({
-						url: '/pages/' + e + '/' + e
+						url: '/pages/' + e
 					})
 				} else {
 					uni.navigateTo({

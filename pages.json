@@ -12,6 +12,12 @@
             "style" : {}
         },
         {
+            "path" : "pages/form/decreateInput",
+            "style" : {
+                "navigationBarTitleText" : "增减元素"
+            }
+        },
+        {
             "path" : "pages/Collapse/Collapse",
             "style" : {}
         }

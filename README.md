@@ -4,7 +4,7 @@
 * 如果你使用过elementui或者iview的表单校验，你会很容易就喜欢上它
 * 没错，它依赖了async-validator，同时提供了和elementui表单校验几乎一样的接口
 * 支持自定义校验规则
-* 暂时不支持动态新增或减少需要校验的表单元素
+* 支持动态新增或减少需要校验的表单元素
 
 
 ## Usage
@@ -60,7 +60,7 @@
  }
 ```
 ## API
-### xPlus.install <font face="黑体" color="red" >[WARNING]暂时不支持，请不要使用</font>
+### xPlus.install <font face="黑体" color="red" >[WARNING]暂时不支持，请不要使用xPlus.install</font>
 ##### 第一个参数是Vue
 ##### 第二个参数是你要给你的标签添加的前缀，如果不使用默认是"x"
 ### validate  验证整个form是否通过校验
@@ -155,6 +155,7 @@ prop|string|--|对应的校验规则，强烈推荐和该表单的绑定值的ke
 #####  <a href="#checkbox&&radio">checkbox&&radio</a>
 #####  <a href="#picker">picker</a>
 #####   <a href="#自定义规则">自定义规则</a>
+#####   <a href="#动态增减表单项">动态增减表单项</a>
    
 ### <a name="基础校验">基础校验</a>
 ```html
@@ -643,6 +644,104 @@ prop|string|--|对应的校验规则，强烈推荐和该表单的绑定值的ke
    </style>
    
    
+```
+###  <a name="动态增减表单项">动态增减表单项</a>
+
+```html
+ <template>
+	<view>
+		<view class="uni-padding-wrap uni-common-mt">
+			<x-form :rules="rules" :model="form" ref="ruleForm" @submit="customerSubmit">
+				<view class="uni-form-item uni-column">
+					<view class="title">普通文字(改变的时候检测){{form.input}}</view>
+					<x-input type="text" :value="form.input" @input="changeInput('input',$event)" prop="input"></x-input>
+				</view>
+                <view class="uni-form-item uni-column" v-for="item in inputArray" :key="item.key" style="position:relative;">
+					<x-input type="text" :value="form[item.key]" @input="changeInput(item.key,$event)" :prop="item.key" placeholder="我系追加的，辣"></x-input>
+                      <button @tap="dele(item.key)" size="mini" type="warn" style="position:absolute;right:5px;top:15px;z-index:20;">删</button>
+				</view>
+                <view>
+                    <button @tap="add">新增一个必填表单</button>
+                </view>
+				<view class="uni-btn-v">
+					<button formType="submit">使用Submit</button>
+					<button @tap="customerSubmit">不使用Submit提交</button>
+					<button type="default" formType="reset">Reset</button>
+				</view>
+			</x-form>
+		</view>
+	</view>
+</template>
+<script>
+	export default {
+        name:"decreateInput",
+		data() {
+			return {
+                modelShow:false,
+                keyx:0,
+                inputArray:[
+
+                ],
+				form: {
+					input: "zz00",
+					input2: "zzyy",
+					passwordx: "123456",
+					number: "",
+					digit: "",
+					idcard: "",
+					textarea: "",
+				},
+				rules: {
+					input: [{
+						required: true,
+						message: '请输入txt',
+						trigger: 'change'
+					}]
+				}
+			}
+		},
+		methods: {
+			add() {
+                    this.keyx+=1;
+                    let k="x"+ this.keyx;
+                    this.inputArray.push({
+                        key:k,
+                        value:""
+                    });
+                    this.form[k]="";
+                    this.rules[k]=[{
+						required: true,
+						message: `请输入${"x"+ this.keyx}`,
+						trigger: 'change'
+					}];
+            },
+            dele(key){
+                this.inputArray=this.inputArray.filter((item)=>item.key!=key);
+                delete this.form[key];
+                delete this.rules[key];
+            },
+			customerSubmit() {
+				this.$refs['ruleForm'].validate((valid) => {
+					if (valid) {
+						uni.showToast({
+                            title: '提交成功',
+                            duration: 2000
+                        });
+					} else {
+						console.log('error submit!!');
+					}
+				});
+			},
+			validInput(k) {
+				this.$refs['ruleForm'].validateField(k)
+
+			},
+			changeInput(k,val){
+				this.form[k]=val;
+			}
+		}
+	}
+</script>
 ```
 
 

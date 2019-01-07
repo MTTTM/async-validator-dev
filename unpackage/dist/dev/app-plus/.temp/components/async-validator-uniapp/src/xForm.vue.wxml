@@ -1,7 +1,7 @@
 <import src="/components/slots" />
 <template name="0c1e8b38">
-  <form bindsubmit="handleProxy" bindreset="handleProxy" data-eventid="{{'790-1'}}" data-comkey="{{$k}}" class="_form data-v-5f61b740">
-    <template bindchange="handleProxy" data-eventid="{{'kl4-0'}}" data-comkey="{{$k}}" name="default"></template>
-    <template bindchange="handleProxy" data-eventid="{{'kl4-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
+  <form bindsubmit="handleProxy" bindreset="handleProxy" data-eventid="{{'sCw-1'}}" data-comkey="{{$k}}" class="_form data-v-5f61b740">
+    <template bindchange="handleProxy" data-eventid="{{'dkk-0'}}" data-comkey="{{$k}}" name="default"></template>
+    <template bindchange="handleProxy" data-eventid="{{'dkk-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
   </form>
 </template>

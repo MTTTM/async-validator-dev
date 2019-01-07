@@ -2,10 +2,12 @@
 <import src="/components/uni-collapse/uni-collapse-item/uni-collapse-item.vue.wxml" />
 <import src="/components/async-validator-uniapp/src/xForm.vue.wxml" />
 <import src="/components/async-validator-uniapp/src/xInput.vue.wxml" />
+<import src="/components/async-validator-uniapp/src/xForm.vue.wxml" />
+<import src="/components/async-validator-uniapp/src/xInput.vue.wxml" />
 <import src="/components/async-validator-uniapp/src/xTextarea.vue.wxml" />
 <import src="/components/uni-collapse/uni-icon/uni-icon.vue.wxml" />
 <import src="/components/slots" />
-<template name="data-v-74f06c8c-default-Fkg-0">
+<template name="data-v-74f06c8c-default-5iz-0">
   <view class="_view data-v-74f06c8c">
     <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
     <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
@@ -13,49 +15,67 @@
     <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
   </view>
 </template>
-<template name="data-v-74f06c8c-default-P3W-1">
+<template name="data-v-74f06c8c-default-MLC-1">
   <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
 </template>
-<template name="data-v-74f06c8c-default-5yG-2">
+<template name="data-v-74f06c8c-default-JIl-2">
   <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 禁用状态 </view>
 </template>
-<template name="data-v-74f06c8c-default-m0e-3">
-  <template title="标题文字" open="t" data="{{...$root['0'], ...$root[$kk+'Fkg-0'],$root, $slotdefault:'data-v-74f06c8c-default-Fkg-0'}}" is="4b7ad7de"></template>
-  <template title="默认开启" open="true" data="{{...$root['0'], ...$root[$kk+'P3W-1'],$root, $slotdefault:'data-v-74f06c8c-default-P3W-1'}}" is="4b7ad7de"></template>
-  <template title="禁用状态" disabled="true" data="{{...$root['0'], ...$root[$kk+'5yG-2'],$root, $slotdefault:'data-v-74f06c8c-default-5yG-2'}}" is="4b7ad7de"></template>
+<template name="data-v-74f06c8c-default-IoW-3">
+  <template title="标题文字" open="t" data="{{...$root['0'], ...$root[$kk+'5iz-0'],$root, $slotdefault:'data-v-74f06c8c-default-5iz-0'}}" is="4b7ad7de"></template>
+  <template title="默认开启" open="true" data="{{...$root['0'], ...$root[$kk+'MLC-1'],$root, $slotdefault:'data-v-74f06c8c-default-MLC-1'}}" is="4b7ad7de"></template>
+  <template title="禁用状态" disabled="true" data="{{...$root['0'], ...$root[$kk+'JIl-2'],$root, $slotdefault:'data-v-74f06c8c-default-JIl-2'}}" is="4b7ad7de"></template>
 </template>
-<template name="data-v-d883f628-default-Jus-7">
+<template name="data-v-968728d6-default-ECV-2">
+  <view class="_view data-v-968728d6 uni-form-item uni-column">
+    <view class="_view data-v-968728d6 title">普通文字(改变的时候检测){{form.input}}</view>
+    <template type="text" bindinput="handleProxy" prop="input" data-eventid="{{'tlw-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'sdC-0'],$root}}" is="74330306"></template>
+  </view>
+  <view class="_view data-v-968728d6 uni-form-item uni-column" wx:key="item.key" key="{{item.key}}" style="position:relative;" wx:for="{{inputArray}}" wx:for-index="index" wx:for-item="item">
+    <template type="text" bindinput="handleProxy" placeholder="我系追加的，辣" data-eventid="{{'M1v-1-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'bp0-1-'+index],$root}}" is="74330306"></template>
+    <button bindtap="handleProxy" size="mini" type="warn" style="position:absolute;right:5px;top:15px;z-index:20;" data-eventid="{{'sTN-2-'+index}}" data-comkey="{{$k}}" class="_button data-v-968728d6">删</button>
+  </view>
+  <view class="_view data-v-968728d6">
+    <button bindtap="handleProxy" data-eventid="{{'nwf-3'}}" data-comkey="{{$k}}" class="_button data-v-968728d6">新增一个必填表单</button>
+  </view>
+  <view class="_view data-v-968728d6 uni-btn-v">
+    <button formType="submit" class="_button data-v-968728d6">使用Submit</button>
+    <button bindtap="handleProxy" data-eventid="{{'FZM-4'}}" data-comkey="{{$k}}" class="_button data-v-968728d6">不使用Submit提交</button>
+    <button type="default" formType="reset" class="_button data-v-968728d6">Reset</button>
+  </view>
+</template>
+<template name="data-v-d883f628-default-QyT-7">
   <view class="_view data-v-d883f628 uni-form-item uni-column">
     <view class="_view data-v-d883f628 title">普通文字(改变的时候检测){{form.input}}</view>
-    <template type="text" bindinput="handleProxy" prop="input" data-eventid="{{'b9q-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'29U-0'],$root}}" is="74330306"></template>
+    <template type="text" bindinput="handleProxy" prop="input" data-eventid="{{'43x-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'G27-0'],$root}}" is="74330306"></template>
   </view>
   <view class="_view data-v-d883f628 uni-form-item uni-column">
     <view class="_view data-v-d883f628 title">普通文字(失去焦点的时候检测){{form.input2}}</view>
-    <template type="text" bindinput="handleProxy" prop="input2" data-eventid="{{'nr4-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'wWE-1'],$root}}" is="74330306"></template>
+    <template type="text" bindinput="handleProxy" prop="input2" data-eventid="{{'8IG-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'y0M-1'],$root}}" is="74330306"></template>
   </view>
   <view class="_view data-v-d883f628 uni-form-item uni-column">
     <view class="_view data-v-d883f628 title">密码:{{form.password}}</view>
-    <template type="password" bindinput="handleProxy" prop="password" data-eventid="{{'FYw-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Gps-2'],$root}}" is="74330306"></template>
+    <template type="password" bindinput="handleProxy" prop="password" data-eventid="{{'XoY-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'x5f-2'],$root}}" is="74330306"></template>
   </view>
   <view class="_view data-v-d883f628 uni-form-item uni-column">
     <view class="_view data-v-d883f628 title">数字{{form.number}}</view>
-    <template type="number" bindinput="handleProxy" prop="number" data-eventid="{{'Gwi-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'4ga-3'],$root}}" is="74330306"></template>
+    <template type="number" bindinput="handleProxy" prop="number" data-eventid="{{'Xdw-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'RDU-3'],$root}}" is="74330306"></template>
   </view>
   <view class="_view data-v-d883f628 uni-form-item uni-column">
     <view class="_view data-v-d883f628 title">小数点数字{{form.digit}}</view>
-    <template type="digit" bindinput="handleProxy" prop="digit" data-eventid="{{'fiC-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'1TH-4'],$root}}" is="74330306"></template>
+    <template type="digit" bindinput="handleProxy" prop="digit" data-eventid="{{'HvZ-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'9UW-4'],$root}}" is="74330306"></template>
   </view>
   <view class="_view data-v-d883f628 uni-form-item uni-column">
     <view class="_view data-v-d883f628 title">身份证{{form.idcard}}</view>
-    <template type="idcard" bindinput="handleProxy" prop="idcard" data-eventid="{{'mZq-5'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'tXd-5'],$root}}" is="74330306"></template>
+    <template type="idcard" bindinput="handleProxy" prop="idcard" data-eventid="{{'f82-5'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'MTj-5'],$root}}" is="74330306"></template>
   </view>
   <view class="_view data-v-d883f628 uni-form-item uni-column">
     <view class="_view data-v-d883f628 title">普通文字(改变的时候检测){{form.textarea}}</view>
-    <template type="text" placeholder="羊羊得亿" bindinput="handleProxy" prop="textarea" data-eventid="{{'OYb-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'hbd-6'],$root}}" is="c7ac86a4"></template>
+    <template type="text" placeholder="羊羊得亿" bindinput="handleProxy" prop="textarea" data-eventid="{{'oxh-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'mOl-6'],$root}}" is="c7ac86a4"></template>
   </view>
   <view class="_view data-v-d883f628 uni-btn-v">
     <button formType="submit" class="_button data-v-d883f628">使用Submit</button>
-    <button bindtap="handleProxy" data-eventid="{{'Vq5-7'}}" data-comkey="{{$k}}" class="_button data-v-d883f628">不使用Submit提交</button>
+    <button bindtap="handleProxy" data-eventid="{{'HOO-7'}}" data-comkey="{{$k}}" class="_button data-v-d883f628">不使用Submit提交</button>
     <button type="default" formType="reset" class="_button data-v-d883f628">Reset</button>
   </view>
 </template>
