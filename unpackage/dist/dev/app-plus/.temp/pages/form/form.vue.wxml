@@ -1,0 +1,12 @@
+<import src="/pages/form/zazahui.vue.wxml" />
+<import src="/components/async-validator-uniapp/src/xForm.vue.wxml" />
+<import src="/components/async-validator-uniapp/src/xInput.vue.wxml" />
+<template name="6d4e2571">
+  <view class="_view data-v-d883f628">
+    <view class="_view data-v-d883f628">================不嵌套的自定义组件za-za-hui的props可以接受============</view>
+    <template type="text" data="{{...$root['0'], ...$root[$kk+'VvF-0'],$root}}" is="07cafdde"></template>
+    <view class="_view data-v-d883f628 uni-padding-wrap uni-common-mt">
+      <template ref="ruleForm" bindsubmit="handleProxy" data-eventid="{{'vGW-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Vjd-4'],$root, $slotdefault:'data-v-d883f628-default-Vjd-4'}}" is="0c1e8b38"></template>
+    </view>
+  </view>
+</template>

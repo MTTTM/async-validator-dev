@@ -1,0 +1,62 @@
+<import src="/pages/form/zazahui.vue.wxml" />
+<import src="/components/uni-collapse/uni-collapse/uni-collapse.vue.wxml" />
+<import src="/components/uni-collapse/uni-collapse-item/uni-collapse-item.vue.wxml" />
+<import src="/components/uni-collapse/uni-icon/uni-icon.vue.wxml" />
+<import src="/components/slots" />
+<import src="/pages/form/zazahui.vue.wxml" />
+<import src="/components/async-validator-uniapp/src/xForm.vue.wxml" />
+<import src="/components/async-validator-uniapp/src/xInput.vue.wxml" />
+<import src="/components/uni-collapse/uni-collapse/uni-collapse.vue.wxml" />
+<import src="/pages/form/zazahui.vue.wxml" />
+<import src="/components/async-validator-uniapp/src/xForm.vue.wxml" />
+<template name="data-v-74f06c8c-default-FIq-0">
+  <view class="_view data-v-74f06c8c">
+    <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
+    <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
+    <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
+    <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
+  </view>
+</template>
+<template name="data-v-74f06c8c-default-LTt-1">
+  <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
+</template>
+<template name="data-v-74f06c8c-default-FD7-2">
+  <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 禁用状态 </view>
+</template>
+<template name="data-v-74f06c8c-default-tK7-3">
+  <template title="标题文字" open="t" data="{{...$root['0'], ...$root[$kk+'FIq-0'],$root, $slotdefault:'data-v-74f06c8c-default-FIq-0'}}" is="4b7ad7de"></template>
+  <template title="默认开启" open="true" data="{{...$root['0'], ...$root[$kk+'LTt-1'],$root, $slotdefault:'data-v-74f06c8c-default-LTt-1'}}" is="4b7ad7de"></template>
+  <template title="禁用状态" disabled="true" data="{{...$root['0'], ...$root[$kk+'FD7-2'],$root, $slotdefault:'data-v-74f06c8c-default-FD7-2'}}" is="4b7ad7de"></template>
+</template>
+<template name="data-v-d883f628-default-Qog-7">
+  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'JEL-1'],$root}}" is="74330306"></template>
+  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
+  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'xBF-2'],$root}}" is="74330306"></template>
+  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'XCt-3'],$root}}" is="74330306"></template>
+  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'P0x-4'],$root}}" is="74330306"></template>
+  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'nzD-5'],$root}}" is="74330306"></template>
+  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
+  <template type="text" data="{{...$root['0'], ...$root[$kk+'vNh-6'],$root}}" is="07cafdde"></template>
+  <view class="_view data-v-d883f628">我是外面的</view>
+</template>
+<template name="data-v-d883f628-default-NQv-2">
+  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
+  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
+  <template type="text" data="{{...$root['0'], ...$root[$kk+'iBy-1'],$root}}" is="07cafdde"></template>
+  <view class="_view data-v-d883f628">我是外面的</view>
+</template>
+<template name="data-v-d883f628-default-Cbt-3">
+  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'0uh-1'],$root}}" is="74330306"></template>
+  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
+  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
+  <template type="text" data="{{...$root['0'], ...$root[$kk+'s9m-2'],$root}}" is="07cafdde"></template>
+  <view class="_view data-v-d883f628">我是外面的</view>
+</template>
+<template name="data-v-d883f628-default-Vjd-4">
+  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'ygH-1'],$root}}" is="74330306"></template>
+  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
+  <template placeholder="我应该显示在你的slot里面的" value="2000000" data="{{...$root['0'], ...$root[$kk+'Bkm-2'],$root}}" is="74330306"></template>
+  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
+  <template type="text" data="{{...$root['0'], ...$root[$kk+'rzD-3'],$root}}" is="07cafdde"></template>
+  <view class="_view data-v-d883f628">我是外面的</view>
+</template>

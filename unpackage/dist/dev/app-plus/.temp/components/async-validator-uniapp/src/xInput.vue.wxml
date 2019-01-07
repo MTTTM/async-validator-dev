@@ -1,0 +1,6 @@
+<template name="74330306">
+  <view class="_view data-v-ed555004">
+    <view class="_view data-v-ed555004">type==:{{type}}</view>
+    <input class="_input data-v-ed555004 uni-input" type="text" value="{{value}}" placeholder="01111" />
+  </view>
+</template>

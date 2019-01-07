@@ -1,0 +1,8 @@
+<template name="6d708b02">
+  <view class="_view data-v-06ce55ec booleen-x-input {{[  errorTxt && errorField == prop ? 'booleen-x-error-input' : '',  disabled ? 'booleen-x-input-disabled' : '']}}">
+    <picker class="_picker data-v-06ce55ec picker-item" value="{{value}}" mode="{{mode}}" start="{{start}}" end="{{end}}" bindchange="handleProxy" bindcancel="handleProxy" disabled="{{disabled}}" data-eventid="{{'C6U-0'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-06ce55ec uni-input" type="text" prop="{{prop}}" disabled="{{disabled}}"> {{value?value:placeholder}} </view>
+    </picker>
+    <view class="_view data-v-06ce55ec booleen-x-error" wx:if="{{errorTxt&&errorField==prop}}">{{errorTxt}}</view>
+  </view>
+</template>
