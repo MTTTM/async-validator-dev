@@ -1,15 +1,11 @@
-<import src="/pages/form/zazahui.vue.wxml" />
 <import src="/components/uni-collapse/uni-collapse/uni-collapse.vue.wxml" />
 <import src="/components/uni-collapse/uni-collapse-item/uni-collapse-item.vue.wxml" />
-<import src="/components/uni-collapse/uni-icon/uni-icon.vue.wxml" />
-<import src="/components/slots" />
-<import src="/pages/form/zazahui.vue.wxml" />
 <import src="/components/async-validator-uniapp/src/xForm.vue.wxml" />
 <import src="/components/async-validator-uniapp/src/xInput.vue.wxml" />
-<import src="/components/uni-collapse/uni-collapse/uni-collapse.vue.wxml" />
-<import src="/pages/form/zazahui.vue.wxml" />
-<import src="/components/async-validator-uniapp/src/xForm.vue.wxml" />
-<template name="data-v-74f06c8c-default-FIq-0">
+<import src="/components/async-validator-uniapp/src/xTextarea.vue.wxml" />
+<import src="/components/uni-collapse/uni-icon/uni-icon.vue.wxml" />
+<import src="/components/slots" />
+<template name="data-v-74f06c8c-default-Fkg-0">
   <view class="_view data-v-74f06c8c">
     <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
     <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
@@ -17,46 +13,49 @@
     <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
   </view>
 </template>
-<template name="data-v-74f06c8c-default-LTt-1">
+<template name="data-v-74f06c8c-default-P3W-1">
   <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 折叠内容主体，可自定义内容及样式 </view>
 </template>
-<template name="data-v-74f06c8c-default-FD7-2">
+<template name="data-v-74f06c8c-default-5yG-2">
   <view style="padding: 30rpx;" class="_view data-v-74f06c8c"> 禁用状态 </view>
 </template>
-<template name="data-v-74f06c8c-default-tK7-3">
-  <template title="标题文字" open="t" data="{{...$root['0'], ...$root[$kk+'FIq-0'],$root, $slotdefault:'data-v-74f06c8c-default-FIq-0'}}" is="4b7ad7de"></template>
-  <template title="默认开启" open="true" data="{{...$root['0'], ...$root[$kk+'LTt-1'],$root, $slotdefault:'data-v-74f06c8c-default-LTt-1'}}" is="4b7ad7de"></template>
-  <template title="禁用状态" disabled="true" data="{{...$root['0'], ...$root[$kk+'FD7-2'],$root, $slotdefault:'data-v-74f06c8c-default-FD7-2'}}" is="4b7ad7de"></template>
+<template name="data-v-74f06c8c-default-m0e-3">
+  <template title="标题文字" open="t" data="{{...$root['0'], ...$root[$kk+'Fkg-0'],$root, $slotdefault:'data-v-74f06c8c-default-Fkg-0'}}" is="4b7ad7de"></template>
+  <template title="默认开启" open="true" data="{{...$root['0'], ...$root[$kk+'P3W-1'],$root, $slotdefault:'data-v-74f06c8c-default-P3W-1'}}" is="4b7ad7de"></template>
+  <template title="禁用状态" disabled="true" data="{{...$root['0'], ...$root[$kk+'5yG-2'],$root, $slotdefault:'data-v-74f06c8c-default-5yG-2'}}" is="4b7ad7de"></template>
 </template>
-<template name="data-v-d883f628-default-Qog-7">
-  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'JEL-1'],$root}}" is="74330306"></template>
-  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
-  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'xBF-2'],$root}}" is="74330306"></template>
-  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'XCt-3'],$root}}" is="74330306"></template>
-  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'P0x-4'],$root}}" is="74330306"></template>
-  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'nzD-5'],$root}}" is="74330306"></template>
-  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
-  <template type="text" data="{{...$root['0'], ...$root[$kk+'vNh-6'],$root}}" is="07cafdde"></template>
-  <view class="_view data-v-d883f628">我是外面的</view>
-</template>
-<template name="data-v-d883f628-default-NQv-2">
-  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
-  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
-  <template type="text" data="{{...$root['0'], ...$root[$kk+'iBy-1'],$root}}" is="07cafdde"></template>
-  <view class="_view data-v-d883f628">我是外面的</view>
-</template>
-<template name="data-v-d883f628-default-Cbt-3">
-  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'0uh-1'],$root}}" is="74330306"></template>
-  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
-  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
-  <template type="text" data="{{...$root['0'], ...$root[$kk+'s9m-2'],$root}}" is="07cafdde"></template>
-  <view class="_view data-v-d883f628">我是外面的</view>
-</template>
-<template name="data-v-d883f628-default-Vjd-4">
-  <template placeholder="我应该显示在你的slot里面的" value="1000000" data="{{...$root['0'], ...$root[$kk+'ygH-1'],$root}}" is="74330306"></template>
-  <view class="_view data-v-d883f628"> 妹妹呵呵 </view>
-  <template placeholder="我应该显示在你的slot里面的" value="2000000" data="{{...$root['0'], ...$root[$kk+'Bkm-2'],$root}}" is="74330306"></template>
-  <view class="_view data-v-d883f628">===========x-form里面的za-za-hui接受不了props=============</view>
-  <template type="text" data="{{...$root['0'], ...$root[$kk+'rzD-3'],$root}}" is="07cafdde"></template>
-  <view class="_view data-v-d883f628">我是外面的</view>
+<template name="data-v-d883f628-default-Jus-7">
+  <view class="_view data-v-d883f628 uni-form-item uni-column">
+    <view class="_view data-v-d883f628 title">普通文字(改变的时候检测){{form.input}}</view>
+    <template type="text" bindinput="handleProxy" prop="input" data-eventid="{{'b9q-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'29U-0'],$root}}" is="74330306"></template>
+  </view>
+  <view class="_view data-v-d883f628 uni-form-item uni-column">
+    <view class="_view data-v-d883f628 title">普通文字(失去焦点的时候检测){{form.input2}}</view>
+    <template type="text" bindinput="handleProxy" prop="input2" data-eventid="{{'nr4-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'wWE-1'],$root}}" is="74330306"></template>
+  </view>
+  <view class="_view data-v-d883f628 uni-form-item uni-column">
+    <view class="_view data-v-d883f628 title">密码:{{form.password}}</view>
+    <template type="password" bindinput="handleProxy" prop="password" data-eventid="{{'FYw-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'Gps-2'],$root}}" is="74330306"></template>
+  </view>
+  <view class="_view data-v-d883f628 uni-form-item uni-column">
+    <view class="_view data-v-d883f628 title">数字{{form.number}}</view>
+    <template type="number" bindinput="handleProxy" prop="number" data-eventid="{{'Gwi-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'4ga-3'],$root}}" is="74330306"></template>
+  </view>
+  <view class="_view data-v-d883f628 uni-form-item uni-column">
+    <view class="_view data-v-d883f628 title">小数点数字{{form.digit}}</view>
+    <template type="digit" bindinput="handleProxy" prop="digit" data-eventid="{{'fiC-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'1TH-4'],$root}}" is="74330306"></template>
+  </view>
+  <view class="_view data-v-d883f628 uni-form-item uni-column">
+    <view class="_view data-v-d883f628 title">身份证{{form.idcard}}</view>
+    <template type="idcard" bindinput="handleProxy" prop="idcard" data-eventid="{{'mZq-5'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'tXd-5'],$root}}" is="74330306"></template>
+  </view>
+  <view class="_view data-v-d883f628 uni-form-item uni-column">
+    <view class="_view data-v-d883f628 title">普通文字(改变的时候检测){{form.textarea}}</view>
+    <template type="text" placeholder="羊羊得亿" bindinput="handleProxy" prop="textarea" data-eventid="{{'OYb-6'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'hbd-6'],$root}}" is="c7ac86a4"></template>
+  </view>
+  <view class="_view data-v-d883f628 uni-btn-v">
+    <button formType="submit" class="_button data-v-d883f628">使用Submit</button>
+    <button bindtap="handleProxy" data-eventid="{{'Vq5-7'}}" data-comkey="{{$k}}" class="_button data-v-d883f628">不使用Submit提交</button>
+    <button type="default" formType="reset" class="_button data-v-d883f628">Reset</button>
+  </view>
 </template>

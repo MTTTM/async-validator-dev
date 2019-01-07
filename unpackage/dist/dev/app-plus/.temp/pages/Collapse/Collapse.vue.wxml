@@ -1,6 +1,7 @@
 <import src="/components/uni-collapse/uni-collapse/uni-collapse.vue.wxml" />
+<import src="/components/uni-collapse/uni-collapse-item/uni-collapse-item.vue.wxml" />
 <template name="131a5691">
   <view class="_view data-v-74f06c8c">
-    <template bindchange="handleProxy" data-eventid="{{'7m7-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'tK7-3'],$root}}" is="76bf981d"></template>
+    <template bindchange="handleProxy" data-eventid="{{'8qn-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'m0e-3'],$root, $slotdefault:'data-v-74f06c8c-default-m0e-3'}}" is="76bf981d"></template>
   </view>
 </template>

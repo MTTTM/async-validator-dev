@@ -1664,7 +1664,8 @@ page {
   border: 1px solid transparent;
   position: relative;
 }
-.booleen-x-input ._textarea {
+.booleen-x-input ._textarea,
+.booleen-x-input ._input {
   background: #fff;
 }
 .booleen-x-input .booleen-x-input {
@@ -1707,7 +1708,8 @@ page {
   border: 1px solid transparent;
   position: relative;
 }
-.booleen-x-input ._textarea {
+.booleen-x-input ._textarea,
+.booleen-x-input ._input {
   background: #fff;
 }
 .booleen-x-input .booleen-x-input {
@@ -1750,7 +1752,8 @@ page {
   border: 1px solid transparent;
   position: relative;
 }
-.booleen-x-input ._textarea {
+.booleen-x-input ._textarea,
+.booleen-x-input ._input {
   background: #fff;
 }
 .booleen-x-input .booleen-x-input {
@@ -1793,7 +1796,8 @@ page {
   border: 1px solid transparent;
   position: relative;
 }
-.booleen-x-input ._textarea {
+.booleen-x-input ._textarea,
+.booleen-x-input ._input {
   background: #fff;
 }
 .booleen-x-input .booleen-x-input {
@@ -1836,7 +1840,8 @@ page {
   border: 1px solid transparent;
   position: relative;
 }
-.booleen-x-input ._textarea {
+.booleen-x-input ._textarea,
+.booleen-x-input ._input {
   background: #fff;
 }
 .booleen-x-input .booleen-x-input {
@@ -1879,7 +1884,8 @@ page {
   border: 1px solid transparent;
   position: relative;
 }
-.booleen-x-input ._textarea {
+.booleen-x-input ._textarea,
+.booleen-x-input ._input {
   background: #fff;
 }
 .booleen-x-input .booleen-x-input {
@@ -1922,7 +1928,8 @@ page {
   border: 1px solid transparent;
   position: relative;
 }
-.booleen-x-input ._textarea {
+.booleen-x-input ._textarea,
+.booleen-x-input ._input {
   background: #fff;
 }
 .booleen-x-input .booleen-x-input {

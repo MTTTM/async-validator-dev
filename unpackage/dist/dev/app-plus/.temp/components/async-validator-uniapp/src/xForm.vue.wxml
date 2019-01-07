@@ -1,11 +1,7 @@
 <import src="/components/slots" />
 <template name="0c1e8b38">
-  <view class="_view data-v-5f61b740">
-    <template name="default"></template>
-    <form class="_form data-v-5f61b740">
-      <input placeholder="这是一个可以自动聚焦的input,我咋x-form组件里面" class="_input data-v-5f61b740" />
-      <view class="_view data-v-5f61b740">app不显示呀</view>
-      <template data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
-    </form>
-  </view>
+  <form bindsubmit="handleProxy" bindreset="handleProxy" data-eventid="{{'790-1'}}" data-comkey="{{$k}}" class="_form data-v-5f61b740">
+    <template bindchange="handleProxy" data-eventid="{{'kl4-0'}}" data-comkey="{{$k}}" name="default"></template>
+    <template bindchange="handleProxy" data-eventid="{{'kl4-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$k], $root}}" is="{{$slotdefault || 'default'}}"></template>
+  </form>
 </template>
