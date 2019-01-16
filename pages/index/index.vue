@@ -15,7 +15,7 @@
 					</view>
 					<view class="uni-list uni-collapse" :class="list.open ? 'uni-active' : ''">
 						<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(item,key) in list.pages" :key="key" @click="goDetailPage(item)">
-							<view class="uni-list-cell-navigate uni-navigate-right"> {{item.name ? item.name : item}} </view>
+							<view class="uni-list-cell-navigate uni-navigate-right"> {{item.label}} </view>
 						</view>
 					</view>
 				</view>
@@ -27,54 +27,29 @@
 	export default {
 		data() {
 			return {
-				lists: [
-					{
-						id: 'view',
-						name: '视图容器',
-						open: false,
-						pages: [
-							'view',
-							'scroll-view',
-							'swiper',
-							'movable-view'
-						]
-					}, {
-						id: 'content',
-						name: '基础内容',
-						open: false,
-						pages: ['text', 'rich-text', 'icon', 'progress']
-					}, {
+				lists: [{
 						id: 'form',
 						name: '表单组件',
 						open: false,
-						pages: ['form/form',"form/decreateInput","form/singleForm"]
-					}, {
-						id: 'nav',
-						name: '导航',
-						open: false,
-						pages: ['navigator']
-					}, {
-						id: 'media',
-						name: '媒体组件',
-						open: false,
-						// #ifdef MP-ALIPAY
-						pages: ['image'],
-						// #endif
-						// #ifndef MP-ALIPAY
-						pages: ['image', 'audio', 'video'],
-						// #endif
-					}, {
-						id: 'map',
-						name: '地图',
-						open: false,
-						pages: ['map']
-
-					},
-					{
-						id: 'web-view',
-						name: '网页',
-						open: false,
-						pages: ['web-view']
+						pages: [
+						{
+							url:"form/form",
+							label:"@input同步"
+						},
+						{
+							url:"form/decreateInput",
+							label:"动态增加"
+						},
+						{
+							url:"form/singleForm",
+							label:'自定义错误&&成功样式'
+						},
+						{
+							url:"form/singleToat",
+							label:'toast提示，顺序校验'
+						},
+						
+						]
 					}
 				]
 			}
@@ -128,15 +103,9 @@
 				}
 			},
 			goDetailPage(e) {
-				if (typeof e === 'string') {
 					uni.navigateTo({
-						url: '/pages/' + e
+						url: "/pages/"+e.url
 					})
-				} else {
-					uni.navigateTo({
-						url: e.url
-					})
-				}
 			}
 		}
 	}

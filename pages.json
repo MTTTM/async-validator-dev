@@ -25,6 +25,11 @@
             "path" : "pages/form/singleForm",
             "style" : {}
         }
+        ,
+        {
+            "path" : "pages/form/singleToat",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",
