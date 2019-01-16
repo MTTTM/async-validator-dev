@@ -52,46 +52,18 @@
 							url:"form/toastdecreateInput",
 							label:'toast&&增减'
 						},
-						
+						//
+							{
+							url:"form/singleRadioCheckbox",
+							label:'checkbox&&radio'
+						},
 						]
 					}
 				]
 			}
 		},
-		onLoad() {
-			// #ifdef APP-PLUS 
-			// web-view组件支持本地html，依赖最新版的客户端基座
-			var innerversion = plus.runtime.innerVersion;
-			var _v = innerversion.substring(innerversion.lastIndexOf('.') + 1, innerversion.length);
-			if (_v && parseInt(_v) >= 53650) {
 
-				var newPages = [{
-					name: '网络网页',
-					url: '/pages/component/web-view/web-view'
-				}, {
-					name: '本地网页',
-					url: '/platforms/app-plus/web-view-local/web-view-local'
-				}];
-				this.lists[this.lists.length - 1].pages = newPages;
-			}
-			// #endif
-		},
-		onShareAppMessage() {
-			return {
-				title: '欢迎体验uni-app',
-				path: '/pages/tabBar/component/component'
-			}
-		},
-		onNavigationBarButtonTap(e) {
-			uni.navigateTo({
-				// #ifdef APP-PLUS
-				url: '/platforms/app-plus/about/about',
-				// #endif
-				// #ifdef H5
-				url: '/platforms/h5/about/about',
-				// #endif
-			})
-		},
+
 		methods: {
 			triggerCollapse(e) {
 				if (!this.lists[e].pages) {
