@@ -29,7 +29,14 @@
         {
             "path" : "pages/form/singleToat",
             "style" : {}
+        },
+        {
+            "path" : "pages/form/toastdecreateInput",
+            "style" : {
+                "navigationBarTitleText" : "TOAST增减元素"
+            }
         }
+        
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",

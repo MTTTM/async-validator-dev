@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="uni-padding-wrap uni-common-mt">
-			<x-form :rules="rules" :model="form" ref="ruleForm" @submit="customerSubmit">
+			<x-form :rules="rules" :model="form" ref="ruleForm" @submit="customerSubmit" :toast="true">
 				<view class="uni-form-item uni-column">
 					<view class="title">普通文字(改变的时候检测){{form.input}}</view>
 					<x-input type="text" v-model="form.input" prop="input"></x-input>
@@ -60,7 +60,10 @@
 						required: true,
 						message: `请输入${"x"+ this.keyx}`,
 						trigger: 'change'
-					}];
+                    }];
+                    //必须更新地址指向
+                    this.rules={...this.rules};
+                    
             },
             dele(key){
                 this.inputArray=this.inputArray.filter((item)=>item.key!=key);
@@ -68,14 +71,20 @@
                 delete this.rules[key];
             },
 			customerSubmit() {
-				this.$refs['ruleForm'].validate((valid) => {
+				this.$refs['ruleForm'].validate((valid,result) => {
 					if (valid) {
 						uni.showToast({
-                            title: '提交成功',
-                            duration: 2000
+                            title: '成功',
+                            duration: 1000,
+                            icon:"none"
                         });
 					} else {
-						console.log('error submit!!');
+						uni.showToast({
+                            title: result.error[0].message,
+                            duration: 1000,
+                            icon:"none"
+                        });
+						return false;
 					}
 				});
 			},

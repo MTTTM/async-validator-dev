@@ -34,19 +34,23 @@
 						pages: [
 						{
 							url:"form/form",
-							label:"@input同步"
+							label:"旧的/@input同步"
 						},
 						{
 							url:"form/decreateInput",
-							label:"动态增加"
+							label:"改进/动态增加"
 						},
 						{
 							url:"form/singleForm",
-							label:'自定义错误&&成功样式'
+							label:'改进/自定义错误&&成功样式'
 						},
 						{
 							url:"form/singleToat",
-							label:'toast提示，顺序校验'
+							label:'改进/toast提示，顺序校验'
+						},
+						{
+							url:"form/toastdecreateInput",
+							label:'toast&&增减'
 						},
 						
 						]
