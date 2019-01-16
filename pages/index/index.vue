@@ -47,7 +47,7 @@
 						id: 'form',
 						name: '表单组件',
 						open: false,
-						pages: ['form/form',"form/decreateInput"]
+						pages: ['form/form',"form/decreateInput","form/singleForm"]
 					}, {
 						id: 'nav',
 						name: '导航',

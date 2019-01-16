@@ -1,6 +1,0 @@
-<template name="56bf8292">
-  <label class="_label data-v-2c7ad8a2 booleen-x-input {{[disabled ? 'booleen-x-input-disabled' : '']}}">
-    <radio value="{{value}}" checked="{{checked}}" disabled="{{disabled}}" color="color" class="_radio data-v-2c7ad8a2" />
-    <text class="_text data-v-2c7ad8a2 booleen-x-input-label">{{label}}</text>
-  </label>
-</template>

@@ -1,6 +1,0 @@
-<template name="9e6c9692">
-  <label class="_label data-v-17079cbf booleen-x-input {{[disabled ? 'booleen-x-input-disabled' : '']}}">
-    <checkbox value="{{value}}" checked="{{checked}}" disabled="{{disabled}}" color="color" class="_checkbox data-v-17079cbf"></checkbox>
-    <text class="_text data-v-17079cbf booleen-x-input-label">{{label}}</text>
-  </label>
-</template>

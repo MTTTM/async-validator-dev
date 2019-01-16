@@ -20,6 +20,10 @@
         {
             "path" : "pages/Collapse/Collapse",
             "style" : {}
+        },
+        {
+            "path" : "pages/form/singleForm",
+            "style" : {}
         }
     ],
     "globalStyle" : {
