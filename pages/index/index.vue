@@ -4,7 +4,7 @@
 			<image src="../../../static/componentIndex.png"></image>
 		</view>
 		<view class="uni-hello-text uni-common-pb">
-			以下将展示uni-app官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见uni-app开发文档。
+			以下将展示async-validator-uniapp组件
 		</view>
 		<view class="uni-card" v-for="(list,index) in lists" :key="index">
 			<view class="uni-list">

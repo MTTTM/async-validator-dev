@@ -16,7 +16,7 @@
             </view>
 			<view class="uni-form-item uni-column">
 				<view class="title">checkbox</view>
-				<x-checkbox-group :v-model="form.checkbox" prop="checkbox">
+				<x-checkbox-group :value.sync="form.checkbox" prop="checkbox">
 					<template v-for="item in items">
 						<x-checkbox :key="item.value" :value="item.name" :label="item.value" :checked="form.checkbox.includes(item.name)"
 						 :disabled="item.disabled" />
@@ -185,6 +185,9 @@ export default {
 	.custom-error-class {
 		color: orange !important;
 	}
+	&.booleen-x-error-input-no-border{
+		border:none;
+	}
 }
 .booleen-x-input.custom-error-class {
 	color: orange;
@@ -192,6 +195,9 @@ export default {
 
 	.custom-error-class {
 		color: orange !important;
+	}
+	&.booleen-x-error-input-no-border{
+		border:none;
 	}
 }
 .booleen-x-input.custom-success-class {
@@ -206,9 +212,15 @@ export default {
 	.custom-error-class {
 		color: #fb4607 !important;
 	}
+	&.booleen-x-error-input-no-border{
+		border:none;
+	}
 }
 .booleen-x-input.custom-one-success-class {
 	color: blue;
 	border: 1px solid blue;
+	&.booleen-x-error-input-no-border{
+		border:none;
+	}
 }
 </style>
