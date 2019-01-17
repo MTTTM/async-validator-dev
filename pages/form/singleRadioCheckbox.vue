@@ -12,8 +12,7 @@
 				</view>
 				<view class="uni-form-item uni-column">
 					<view class="title">checkbox:{{form.checkbox}}</view>
-					<!-- prop="checkbox" -->
-		 	      <x-checkbox-group  :value.sync="form.checkbox">
+		 	      <x-checkbox-group  :value.sync="form.checkbox" prop="checkbox">
 						<template v-for="item in items">
 							<x-checkbox :key="item.value" :value="item.name" :label="item.value" :checked="form.checkbox.includes(item.name)"
 							 :disabled="item.disabled" />
@@ -68,19 +67,19 @@
 			
 				},
 				rules: {
-// 					checkbox: [{
-// 							type: 'array',
-// 							required: true,
-// 							message: '请选择checkbox',
-// 							trigger: 'change'
-// 						},
-// 						{
-// 							type: 'array',
-// 							min: 2,
-// 							message: '请选择至少2个checkbox',
-// 							trigger: 'change'
-// 						},
-// 					],
+					checkbox: [{
+							type: 'array',
+							required: true,
+							message: '请选择checkbox',
+							trigger: 'change'
+						},
+						{
+							type: 'array',
+							min: 2,
+							message: '请选择至少2个checkbox',
+							trigger: 'change'
+						},
+					],
 					radio: [{
 						required: true,
 						message: '请选择radio',
