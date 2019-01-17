@@ -2,17 +2,18 @@
 	<view>
 		
 		<view class="uni-padding-wrap uni-common-mt">
-			<x-form :rules="rules" :model="form" ref="ruleForm" @submit="customerSubmit">
+			<x-form :rules="rules" :model="form" ref="ruleForm">
 				<view class="uni-form-item uni-column">
 					<view class="title">radio:{{form.radio}}----{{form.radio==1}}</view>
-					<x-radio-group  :value.sync="form.radio">
+					<x-radio-group  :value.sync="form.radio" prop="radio">
 						<x-radio value="1" label="选项1" :checked="form.radio==1?true:false" />
 						<x-radio value="2" label="选项2" :checked="form.radio==2?true:false"  />
 					</x-radio-group>
 				</view>
 				<view class="uni-form-item uni-column">
 					<view class="title">checkbox:{{form.checkbox}}</view>
-		 	      <x-checkbox-group  prop="checkbox">
+					<!-- prop="checkbox" -->
+		 	      <x-checkbox-group  :value.sync="form.checkbox">
 						<template v-for="item in items">
 							<x-checkbox :key="item.value" :value="item.name" :label="item.value" :checked="form.checkbox.includes(item.name)"
 							 :disabled="item.disabled" />
@@ -21,7 +22,6 @@
                     <button @tap="validInput('checkbox')">验证单个表单</button> 
 				</view>
 				<view class="uni-btn-v">
-					<button formType="submit">使用Submit</button>
 					<button @tap="customerSubmit">不使用Submit提交</button>
 					<button type="default" formType="reset">Reset</button>
 				</view>
@@ -64,23 +64,23 @@
 				],
 				form: {
 					checkbox: ['TUR'],
-					radio: "1",
+					radio: "",
 			
 				},
 				rules: {
-					checkbox: [{
-							type: 'array',
-							required: true,
-							message: '请选择checkbox',
-							trigger: 'change'
-						},
-						{
-							type: 'array',
-							min: 2,
-							message: '请选择至少2个checkbox',
-							trigger: 'change'
-						},
-					],
+// 					checkbox: [{
+// 							type: 'array',
+// 							required: true,
+// 							message: '请选择checkbox',
+// 							trigger: 'change'
+// 						},
+// 						{
+// 							type: 'array',
+// 							min: 2,
+// 							message: '请选择至少2个checkbox',
+// 							trigger: 'change'
+// 						},
+// 					],
 					radio: [{
 						required: true,
 						message: '请选择radio',
@@ -119,7 +119,11 @@
 			},
 			radioChange: function (e) {
             console.log('radio发生change事件，携带value值为：' + e.detail.value)
-           }
+           },
+		   validInput(k) {
+		   	this.$refs['ruleForm'].validateField(k)
+		   
+		   }
 		}
 	}
 </script>
