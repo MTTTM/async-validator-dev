@@ -1,19 +1,18 @@
 {
     "pages" : [
         //pages数组第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		
         {
             "path" : "pages/index/index",
             "style" : {
                 "navigationBarTitleText" : "async-validator-uniapp"
             }
         },
-		 {
-		    "path" : "pages/form/singleRadioCheckbox",
-		    "style" : {
-		        "navigationBarTitleText" : "checkbox&&radio"
-		    }
-		},
+        {
+            "path" : "pages/form/singleRadioCheckbox",
+            "style" : {
+                "navigationBarTitleText" : "checkbox&&radio"
+            }
+        },
         {
             "path" : "pages/form/form",
             "style" : {}
@@ -31,8 +30,7 @@
         {
             "path" : "pages/form/singleForm",
             "style" : {}
-        }
-        ,
+        },
         {
             "path" : "pages/form/singleToat",
             "style" : {}
@@ -42,9 +40,15 @@
             "style" : {
                 "navigationBarTitleText" : "TOAST增减元素"
             }
+        },
+        {
+            "path" : "pages/form/x-form-item/x-form-item",
+            "style" : {}
+        },
+        {
+            "path" : "pages/form/x-form-item/x-form-item-error",
+            "style" : {}
         }
-       
-        
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",

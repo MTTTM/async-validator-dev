@@ -33,6 +33,14 @@
 						open: false,
 						pages: [
 						{
+							url:"form/x-form-item/x-form-item",
+							label:"最简单的校验"
+						},
+						{
+							url:"form/x-form-item/x-form-item-error",
+							label:"最推荐"
+						},
+						{
 							url:"form/form",
 							label:"旧的/@input同步"
 						},
