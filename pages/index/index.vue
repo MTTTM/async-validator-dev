@@ -20,7 +20,7 @@
 							class="uni-list-cell"
 							hover-class="uni-list-cell-hover"
 							v-for="(item, key) in list.pages"
-							:key="'input'+key"
+							:key="key"
 							@click="goDetailPage(item)"
 						>
 							<view class="uni-list-cell-navigate uni-navigate-right">
@@ -30,70 +30,68 @@
 					</view>
 				</view>
 			</view>
-	    </view>
-
+		</view>
 	</view>
 </template>
 <script>
 export default {
 	data() {
 		return {
-			lists: [{
+			lists: [
+				{
 					id: 'form',
 					name: '表单组件',
 					open: false,
 					pages: [
-					{
-						url:"form/x-form-item/x-form-item",
-						label:"最简单的校验"
-					},
-					{
-						url:"form/x-form-item/x-form-item-error",
-						label:"最推荐"
-					},
-					{
-						url:"form/form",
-						label:"旧的/@input同步"
-					},
-					{
-						url:"form/decreateInput",
-						label:"改进/动态增加"
-					},
-					{
-						url:"form/singleForm",
-						label:'改进/自定义错误&&成功样式'
-					},
-					{
-						url:"form/singleToat",
-						label:'改进/toast提示，顺序校验'
-					},
-					{
-						url:"form/toastdecreateInput",
-						label:'toast&&增减'
-					},
-					//
 						{
-						url:"form/singleRadioCheckbox",
-						label:'checkbox&&radio'
-					},
+							url: 'form/x-form-item/x-form-item',
+							label: '最简单的校验'
+						},
+						{
+							url: 'form/x-form-item/x-form-item-error',
+							label: '最推荐'
+						},
+						{
+							url: 'form/form',
+							label: '旧的/@input同步'
+						},
+						{
+							url: 'form/decreateInput',
+							label: '改进/动态增加'
+						},
+						{
+							url: 'form/singleForm',
+							label: '改进/自定义错误&&成功样式'
+						},
+						{
+							url: 'form/singleToat',
+							label: '改进/toast提示，顺序校验'
+						},
+						{
+							url: 'form/toastdecreateInput',
+							label: 'toast&&增减'
+						},
+						//
+						{
+							url: 'form/singleRadioCheckbox',
+							label: 'checkbox&&radio'
+						}
 					]
 				},
 				{
-						id: 'table',
-						name: 'table',
-						open: false,
-						pages: [
-							{
-								url:"table/table",
-								label:"table"
-							}
-						]
-					}
+					id: 'table',
+					name: 'table',
+					open: false,
+					pages: [
+						{
+							url: 'table/table',
+							label: 'table'
+						}
+					]
+				}
 			]
-			
-		}
+		};
 	},
-
 
 	methods: {
 		triggerCollapse(e) {
@@ -110,12 +108,12 @@ export default {
 			}
 		},
 		goDetailPage(e) {
-				uni.navigateTo({
-					url: "/pages/"+e.url
-				})
+			uni.navigateTo({
+				url: '/pages/' + e.url
+			});
 		}
 	}
-}
+};
 </script>
 
 <style>
