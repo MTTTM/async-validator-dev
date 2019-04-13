@@ -49,6 +49,10 @@
             "path" : "pages/form/x-form-item/x-form-item-error",
             "style" : {}
         }
+        ,{
+            "path" : "pages/table/table",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",
