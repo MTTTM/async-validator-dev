@@ -3,7 +3,7 @@
 		<view class="uni-header-logo">
 			<image src="../../../static/componentIndex.png"></image>
 		</view>
-		<view class="uni-hello-text uni-common-pb">以下将展示async-validator-uniapp组件</view>
+		<view class="uni-hello-text uni-common-pb">电脑浏览器模拟wap和真实移动设备范围有差别！</view>
 		<view class="uni-card" v-for="(list, index) in lists" :key="index">
 			<view class="uni-list">
 				<view class="uni-list-cell uni-collapse">
@@ -86,6 +86,16 @@ export default {
 						{
 							url: 'table/table',
 							label: 'table'
+						}
+					]
+				},{
+					id:"noBadTable",
+					name:"noBadTable",
+					open: true,
+					pages:[
+						{
+							url:"noBadTable/tableDemo",
+							label:"noBadTable "
 						}
 					]
 				}

@@ -52,7 +52,11 @@
         ,{
             "path" : "pages/table/table",
             "style" : {}
-        }
+        },
+		{
+		    "path" : "pages/noBadTable/tableDemo",
+		    "style" : {}
+		}
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",
